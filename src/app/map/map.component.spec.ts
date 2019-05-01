@@ -1,6 +1,7 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { MapComponent } from './map.component';
+import { AngularCesiumModule, ViewerConfiguration } from 'angular-cesium';
 
 describe('MapComponent', () => {
   let component: MapComponent;
@@ -8,9 +9,10 @@ describe('MapComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ MapComponent ]
-    })
-    .compileComponents();
+      declarations: [MapComponent],
+      imports: [AngularCesiumModule.forRoot()],
+      providers: [ViewerConfiguration]
+    }).compileComponents();
   }));
 
   beforeEach(() => {
