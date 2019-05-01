@@ -1,3 +1,80 @@
+The purpose of this project is figure out how to use angular-cesium while also being able to run unit tests.
+
+These are the errors that occure when running `ng test`
+
+```
+01 05 2019 09:14:09.602:INFO [Chrome 73.0.3683 (Windows 10.0.0)]: Connected on socket cNA4-HiMgS7MQB9sAAAA with id 53976396
+Chrome 73.0.3683 (Windows 10.0.0) ERROR
+  {
+    "message": "Uncaught ReferenceError: Cesium is not defined
+at http://localhost:9876/_karma_webpack_/vendor.js:100708:16
+
+ReferenceError: Cesium is not defined
+    at http://localhost:9876/_karma_webpack_/vendor.js:100708:16
+    at Object.<anonymous> (http://localhost:9876/_karma_webpack_/vendor.js:100712:2)
+    at __webpack_require__ (http://localhost:9876/_karma_webpack_/vendor.js:100269:30)
+    at Object.<anonymous> (http://localhost:9876/_karma_webpack_/vendor.js:100350:26)
+    at __webpack_require__ (http://localhost:9876/_karma_webpack_/vendor.js:100269:30)
+    at Object.<anonymous> (http://localhost:9876/_karma_webpack_/vendor.js:100799:10)
+    at __webpack_require__ (http://localhost:9876/_karma_webpack_/vendor.js:100269:30)
+    at http://localhost:9876/_karma_webpack_/vendor.js:100313:18
+    at http://localhost:9876/_karma_webpack_/vendor.js:100316:10
+    at webpackUniversalModuleDefinition (http://localhost:9876/_karma_webpack_/vendor.js:100247:20)",
+    "str": "Uncaught ReferenceError: Cesium is not defined
+at http://localhost:9876/_karma_webpack_/vendor.js:100708:16
+
+ReferenceError: Cesium is not defined
+    at http://localhost:9876/_karma_webpack_/vendor.js:100708:16
+    at Object.<anonymous> (http://localhost:9876/_karma_webpack_/vendor.js:100712:2)
+    at __webpack_require__ (http://localhost:9876/_karma_webpack_/vendor.js:100269:30)
+    at Object.<anonymous> (http://localhost:9876/_karma_webpack_/vendor.js:100350:26)
+    at __webpack_require__ (http://localhost:9876/_karma_webpack_/vendor.js:100269:30)
+    at Object.<anonymous> (http://localhost:9876/_karma_webpack_/vendor.js:100799:10)
+    at __webpack_require__ (http://localhost:9876/_karma_webpack_/vendor.js:100269:30)
+    at http://localhost:9876/_karma_webpack_/vendor.js:100313:18
+    at http://localhost:9876/_karma_webpack_/vendor.js:100316:10
+    at webpackUniversalModuleDefinition (http://localhost:9876/_karma_webpack_/vendor.js:100247:20)"
+  }
+
+Chrome 73.0.3683 (Windows 10.0.0) ERROR
+  {
+    "message": "Uncaught ReferenceError: Cesium is not defined
+at http://localhost:9876/_karma_webpack_/vendor.js:100708:16
+
+ReferenceError: Cesium is not defined
+    at http://localhost:9876/_karma_webpack_/vendor.js:100708:16
+    at Object.<anonymous> (http://localhost:9876/_karma_webpack_/vendor.js:100712:2)
+    at __webpack_require__ (http://localhost:9876/_karma_webpack_/vendor.js:100269:30)
+    at Object.<anonymous> (http://localhost:9876/_karma_webpack_/vendor.js:100350:26)
+    at __webpack_require__ (http://localhost:9876/_karma_webpack_/vendor.js:100269:30)
+    at Object.<anonymous> (http://localhost:9876/_karma_webpack_/vendor.js:100799:10)
+    at __webpack_require__ (http://localhost:9876/_karma_webpack_/vendor.js:100269:30)
+    at http://localhost:9876/_karma_webpack_/vendor.js:100313:18
+    at http://localhost:9876/_karma_webpack_/vendor.js:100316:10
+    at webpackUniversalModuleDefinition (http://localhost:9876/_karma_webpack_/vendor.js:100247:20)",
+    "str": "Uncaught ReferenceError: Cesium is not defined
+at http://localhost:9876/_karma_webpack_/vendor.js:100708:16
+
+ReferenceError: Cesium is not defined
+    at http://localhost:9876/_karma_webpack_/vendor.js:100708:16
+    at Object.<anonymous> (http://localhost:9876/_karma_webpack_/vendor.js:100712:2)
+    at __webpack_require__ (http://localhost:9876/_karma_webpack_/vendor.js:100269:30)
+    at Object.<anonymous> (http://localhost:9876/_karma_webpack_/vendor.js:100350:26)
+    at __webpack_require__ (http://localhost:9876/_karma_webpack_/vendor.js:100269:30)
+    at Object.<anonymous> (http://localhost:9876/_karma_webpack_/vendor.js:100799:10)
+    at __webpack_require__ (http://localhost:9876/_karma_webpack_/vendor.js:100269:30)
+    at http://localhost:9876/_karma_webpack_/vendor.js:100313:18
+    at http://localhost:9876/_karma_webpack_/vendor.js:100316:10
+    at webpackUniversalModuleDefinition (http://localhost:9876/_karma_webpack_/vendor.js:100247:20)"
+  }
+
+```
+
+
+
+
+
+
 # Prototypes
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
